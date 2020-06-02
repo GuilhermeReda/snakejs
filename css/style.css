@@ -1,0 +1,61 @@
+body {
+	color:white;
+	background-image:url('../img/back.JPG');
+}
+
+#main {
+	left:100;
+	width:700px;
+	height:540px;
+}
+
+#canvas {
+	border:#000000 2px solid;
+}
+
+#left {
+	width:500px;
+	height:502px;
+}
+
+#right {
+	float:right;
+	position: absolute;
+	left:10px;
+	top:1px;
+	text-align:left;
+}
+
+#leftdown {
+	width:250px;
+	height:20px;
+	float:left;
+	text-align:left;
+}
+
+#rightdown {
+	width:250px;
+	height:20px;
+	float:right;
+	text-align:right;
+}
+
+#pausar {
+	background-image:url('../img/back.JPG');
+	border:none;
+	font-weight: bold;color:white;
+}
+
+#reiniciar {
+	background-image:url('../img/back.JPG');
+	border:none;
+	font-weight: bold;
+	color:white;
+}
+
+#pontos {
+	background-image:url('../img/back.JPG');
+	border:none;
+	font-weight: bold;
+	color:white;
+}

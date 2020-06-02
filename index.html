@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+		<script type="text/javascript" src="js/main.js"></script>
+		<link href="css/style.css" type="text/css" rel="stylesheet" ></link> 
+	</head> 
+	<body> 
+		<center><b>
+			<div id="main">
+				<div id="left">
+					<canvas id="canvas" width="500" height="500">Seu browser não suporta CANVAS</canvas>
+					<div id="leftdown">
+						<input type="button" value="Pausar" id="pausar" onclick="Pause()"></input><br />
+						<input type="CHECKBOX" name="block" id="block">Paredes Sólidas</input><br/>
+					</div>
+					<div id="rightdown">
+						<input type="button" value="Reiniciar" id="reiniciar" onclick="Reset()"></input><br />
+						Pontos:&nbsp <input type="TEXTBOX" name="pontos" id="pontos" value="00"></input>
+					</div>
+				</div>
+				<div id="right" class="rank"><b>Rank:</b></div>
+			</div><br/>
+			Use as setas ou w,a,s,d para mover a cobra.
+		</center><b>
+	</body> 
+</html>
