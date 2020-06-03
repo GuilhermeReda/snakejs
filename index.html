@@ -1,27 +1,39 @@
 <!DOCTYPE html> 
-<html> 
+<html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
-		<script type="text/javascript" src="js/main.js"></script>
-		<link href="css/style.css" type="text/css" rel="stylesheet" ></link> 
-	</head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<link href="css/style.css" type="text/css" rel="stylesheet" >
+	</head>
 	<body> 
-		<center><b>
-			<div id="main">
-				<div id="left">
-					<canvas id="canvas" width="500" height="500"></canvas>
-					<div id="leftdown">
-						<input type="button" value="Pause" id="pause"><br />
-						<label> <input type="CHECKBOX" name="block" id="solid-walls"> Solid walls </label> <br/>
-					</div>
-					<div id="rightdown">
-						<input type="button" value="Reset" id="reset"><br />
-						Points:&nbsp <span id="score">00</span>
-					</div>
-				</div>
-				<div id="right" class="rank"><b>Rank:</b></div>
-			</div><br/>
-			Use the arrows keys or w,a,s,d to move the snake.
-		</center><b>
-	</body> 
+    <div class="container">
+      <canvas id="canvas" width="500" height="500"></canvas>
+
+      <div class="controls">
+        <div class="pull-left">
+          <button type="button" id="pause">Pause</button>
+          <br />
+          <label>
+            <input type="CHECKBOX" name="block" id="solid-walls">
+            Solid walls
+          </label>
+        </div>
+
+        <div class="pull-right">
+          <button type="button" id="reset">Reset</button>
+          <br />
+          Points: <span id="score">00</span>
+        </div>
+      </div>
+    </div>
+
+    <script type="module">
+      import { Snake } from './js/snake.js';
+      window.onload = function onload() {
+        const snake = new Snake();
+        snake.init();
+      };
+
+
+    </script>
+	</body>
 </html>

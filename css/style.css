@@ -1,61 +1,32 @@
 body {
-	color:white;
-	background-image:url('../img/back.JPG');
+	color: white;
+	background-image: url('../img/back.JPG');
 }
 
-#main {
-	left:100;
-	width:700px;
-	height:540px;
+.container {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
 }
 
-#canvas {
-	border:#000000 2px solid;
+.controls {
+    display: block;
+    width: 100%;
+    overflow: auto;
 }
 
-#left {
-	width:500px;
-	height:502px;
+.pull-left {
+    float: left;
+    overflow: auto;
+    text-align: left;
 }
 
-#right {
-	float:right;
-	position: absolute;
-	left:10px;
-	top:1px;
-	text-align:left;
+.pull-right {
+    float: right;
+    overflow: auto;
+    text-align: right;
 }
 
-#leftdown {
-	width:250px;
-	height:20px;
-	float:left;
-	text-align:left;
-}
-
-#rightdown {
-	width:250px;
-	height:20px;
-	float:right;
-	text-align:right;
-}
-
-#pausar {
-	background-image:url('../img/back.JPG');
-	border:none;
-	font-weight: bold;color:white;
-}
-
-#reiniciar {
-	background-image:url('../img/back.JPG');
-	border:none;
-	font-weight: bold;
-	color:white;
-}
-
-#pontos {
-	background-image:url('../img/back.JPG');
-	border:none;
-	font-weight: bold;
-	color:white;
+canvas {
+    border: 1px solid black;
 }
