@@ -9,19 +9,19 @@
 		<center><b>
 			<div id="main">
 				<div id="left">
-					<canvas id="canvas" width="500" height="500">Seu browser não suporta CANVAS</canvas>
+					<canvas id="canvas" width="500" height="500"></canvas>
 					<div id="leftdown">
-						<input type="button" value="Pausar" id="pausar" onclick="Pause()"></input><br />
-						<input type="CHECKBOX" name="block" id="block">Paredes Sólidas</input><br/>
+						<input type="button" value="Pausar" id="pause"><br />
+						<label> <input type="CHECKBOX" name="block" id="solid-walls"> Solid walls </label> <br/>
 					</div>
 					<div id="rightdown">
-						<input type="button" value="Reiniciar" id="reiniciar" onclick="Reset()"></input><br />
-						Pontos:&nbsp <input type="TEXTBOX" name="pontos" id="pontos" value="00"></input>
+						<input type="button" value="Reset" id="reset"><br />
+						Points:&nbsp <span id="score">00</span>
 					</div>
 				</div>
 				<div id="right" class="rank"><b>Rank:</b></div>
 			</div><br/>
-			Use as setas ou w,a,s,d para mover a cobra.
+			Use the arrows keys or w,a,s,d to move the snake.
 		</center><b>
 	</body> 
 </html>
