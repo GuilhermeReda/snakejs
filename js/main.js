@@ -41,7 +41,7 @@ class Engine {
   
   async loadImages() {
     this.IMAGES = {
-      GAME_OVER: await this.loadImage('img/gameover.PNG'),
+      GAME_OVER: await this.loadImage('img/gameover.png'),
     }
   }
 
